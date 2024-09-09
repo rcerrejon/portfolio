@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" data-lt-installed="true">
+
+<!-- HEAD -->
+
+<head>
+  <!-- Set character encoding -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <!-- Ensures the page is responsive and scales properly on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page title -->
+  <title>Rafael Cerrejon | Portfolio</title>
+
+  <!-- Open Graph metadata for sharing on social media -->
+  <meta property="og:title" content="Rafael Cerrejon | Portfolio">
+  <link rel="canonical" href="https://www.rafaelcerrejon.com">
+  <meta name="description"
+    content="Mobile app developer. React Native and Flutter. Creating high-performance and scalable applications. Explore my portfolio to know more about me.">
+  <meta property="og:description"
+    content="Mobile app developer. React Native and Flutter. Creating high-performance and scalable applications. Explore my portfolio to know more about me.">
+  <meta property="og:url" content="https://www.rafaelcerrejon.com">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon and icons for different devices -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+  <!-- CSS stylesheets for page styling -->
+  <link rel="stylesheet" href="normalize.css"> <!-- Normalize CSS for cross-browser consistency -->
+  <link rel="stylesheet" href="open-color.css"> <!-- Custom color palette -->
+  <link rel="stylesheet" href="styles.css"> <!-- Main stylesheet -->
+
+  <!-- Typed.js library for dynamic typing effect -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<!-- /HEAD -->
+
+<!-- BODY -->
+
+<body>
+  <main>
+    <!-- Main content section displaying personal details in JSON format -->
+    <div id="json">
+
+      <!-- Displaying name -->
+      <div class="my ms">
+        "<span class="key">Name</span>":
+        "<span class="value">Rafael Cerrejon</span>",
+      </div>
+
+      <!-- Displaying role/title -->
+      <div class="my ms">
+        "<span class="key">Role</span>":
+        "<span class="value">Software Engineer</span>",
+      </div>
+
+      <!-- Dynamic display of skills with typing animation -->
+      <div class="my ms">
+        <div id="strings"
+          style="clip: rect(0px, 0px, 0px, 0px); clip-path: inset(50%); height: 1px; overflow: hidden; position: absolute; white-space: nowrap; width: 1px;">
+          <span>Mobile
+            Apps
+            Development</span><span>iOS /
+            Android</span><span>Flutter /
+            Dart</span><span>React Native /
+            Typescript</span>
+        </div>
+        "<span class="key">Skills</span>":
+        "<span class="value"><span id="typed">Mobile Apps Development</span><span
+            class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></span>",
+      </div>
+
+      <!-- Displaying location -->
+      <div class="my ms">
+        "<span class="key">Address</span>":
+        "<span class="value">Cologne (Germany)</span>",
+      </div>
+
+      <!-- Displaying links to networks -->
+      <div class="my ms">
+        "<span class="key">Networks</span>": [
+        <p class="ms">
+          "<span class="key">GitHub</span>":
+          "<a class="value" href="https://github.com/rcerrejon" target="_blank">https://github.com/rcerrejon</a>"
+        </p>
+        <p class="ms">
+          "<span class="key">StackOverflow</span>":
+          "<a class="value" href="https://stackoverflow.com/users/907953"
+            target="_blank">https://stackoverflow.com/users/907953</a>"
+        </p>
+        <p class="ms">
+          "<span class="key">Linkedin</span>":
+          "<a class="value" href="https://www.linkedin.com/in/rafael-cerrejon"
+            target="_blank">https://www.linkedin.com/in/rafael-cerrejon</a>"
+        </p>
+        <p class="ms">
+          "<span class="key">Email</span>":
+          "<a class="value" href="mailto:rafaelcerrejon@gmail.com" target="_blank">rafaelcerrejon@gmail.com</a>"
+        </p>
+        ],
+      </div>
+
+      <!-- Links to CV and Resume -->
+      <div class="my ms">
+        "<span class="key">Lebenslauf-german</span>":
+        "<a class="value" href="lebenslauf.pdf" target="_blank">Lebenslauf.pdf</a>",
+      </div>
+
+      <div class="my ms">
+        "<span class="key">Resume-english</span>":
+        "<a class="value" href="resume.pdf" target="_blank">Resume.pdf</a>",
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Script to initiate Typed.js for typing effect -->
+  <script>
+    var typed = new Typed("#typed", {
+      stringsElement: "#strings",  // The element containing strings to be typed
+      backSpeed: 10,              // Speed at which the text is erased
+      typeSpeed: 30,              // Speed at which the text is typed
+      backDelay: 1000,            // Delay before text is erased
+      loop: true,                 // Loop the typing effect indefinitely
+      smartBackspace: true,       // Only backspace text that doesn't match the new string
+    });
+  </script>
+
+  <!-- Style for cursor blinking in Typed.js -->
+  <style data-typed-js-cursor-css="true">
+    .typed-cursor {
+      opacity: 1;
+    }
+
+    .typed-cursor.typed-cursor--blink {
+      animation: typedjsBlink 0.7s infinite;
+      -webkit-animation: typedjsBlink 0.7s infinite;
+      animation: typedjsBlink 0.7s infinite;
+    }
+
+    @keyframes typedjsBlink {
+      50% {
+        opacity: 0.0;
+      }
+    }
+
+    @-webkit-keyframes typedjsBlink {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+
+</body>
+
+<!-- /BODY -->
+
+</html>
